@@ -1,0 +1,31 @@
+<!--pages/details/details.wxml-->
+
+<!--有数据-->
+<view class="data-yes" wx:if="{{data_display1}}">
+  <!--标题框-->
+  <view class="tr-th">
+    <view class="th th1">序号</view>
+    <view class="th th2">日期</view>
+    <view class="th th3">时段</view>
+    <view class="th th4">路程</view>
+    <view class="th th5">速度</view>
+    <view class="th th6">有效</view>
+  </view>
+  <!--内容框-->
+  <view class="tr-view">
+    <view class="tr-td" wx:for="{{testList}}" wx:key="key">
+      <view class="td td1">{{item.num}}</view>
+      <view class="td td2">{{item.date}}</view>
+      <view class="td td3">{{item.time}}</view>
+      <view class="td td4">{{item.distance}}</view>
+      <view class="td td5">{{item.speed}}</view>
+      <view class="td td6">
+        <image src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/details_img/gou.png" wx:if="{{item.efft}}"></image>
+        <image src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/details_img/cha.png" wx:else></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--无数据-->
+<view class="data-no" wx:if="{{data_display2}}">暂无您的跑步数据</view>

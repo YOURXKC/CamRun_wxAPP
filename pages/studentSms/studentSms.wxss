@@ -1,0 +1,49 @@
+/* pages/studentSms/studentSms.wxss */
+.views{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #6A5ACD;
+  overflow-x: hidden;
+}
+.block-view{
+  width: 92vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  overflow: hidden;
+  margin: 30rpx auto;
+  border-radius: 40rpx;
+  font-size: 38rpx;
+}
+.keys{
+  float: left;
+  width: 20vw;
+  height: 80rpx;
+  text-align: center;
+  background-color: white;
+  color: #6A5ACD;
+  font-weight: bold;
+}
+.values{
+  text-align: center;
+  float: right;
+  width: 70vw;
+  height: 80rpx;
+  background-color: white;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.fanhui{
+  overflow: hidden;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 65rpx;
+  margin: 100rpx auto;
+  background-color: white;
+}
+.fanhui image{
+  display: block;
+  width: 90rpx;
+  height: 90rpx;
+  margin: 20rpx;
+}

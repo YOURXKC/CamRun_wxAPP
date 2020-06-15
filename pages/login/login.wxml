@@ -1,0 +1,27 @@
+<!--pages/login/login.wxml-->
+<!--背景区域-->
+<view class="backgrounds">
+  <image class="back-image" mode="aspectFill" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/login_img/background1.png"></image>
+</view>
+<!--显示区域-->
+<view class="input-viewss">
+  <view class="input-views">
+    <!--LOGO-->
+    <image class="logo" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/login_img/schooltext2.png"></image>
+    <!--输入区域-->
+    <view class="input-view">
+      <!--用户名-->
+      <view class="input-user-password">
+        <image class="input-icon" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/login_img/user.png"></image>
+        <input class="input-value"  maxlength="10" bindinput="getUserName" placeholder="学号" type="number" placeholder-class="input-color"/>
+      </view>
+      <!--密码-->
+      <view class="input-user-password">
+        <image class="input-icon" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/login_img/password.png"></image>
+        <input class="input-value"  maxlength="18" bindinput="getPassword" placeholder="密码" password type="text"  placeholder-class="input-color"/>
+      </view>
+      <!--按钮-->
+      <view class="button" bindtap="clickButton">绑定账号</view>
+    </view>
+  </view>
+</view>

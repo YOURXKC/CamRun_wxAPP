@@ -1,0 +1,72 @@
+/* pages/details/details.wxss */
+.data-no{
+  width: 100%;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  color: white;
+  background-color: #6A5ACD;
+}
+.data-yes{
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+}
+.tr-th{
+  width: 100%;
+  height: 8vh;
+  background-color: #6A5ACD;
+  color: white;
+  overflow: hidden;
+}
+.tr-view{
+  width: 100%;
+  height: 92vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.tr-td{
+  width: 100%;
+  height: 12vw;
+  overflow: hidden;
+  border-bottom: 3rpx solid #6A5ACD;
+}
+.th{
+  float: left;
+  height: 8vh;
+  line-height: 8vh;
+  font-size: 28rpx;
+  font-weight: bolder;
+  text-align: center;
+}
+.td{
+  float: left;
+  height: 12vw;
+  line-height: 12vw;
+  text-align: center;
+  font-size: 25rpx;
+}
+.th1,.td1{
+  width: 10%;
+}
+.th2,.td2{
+  width: 30%;
+}
+.th3,.td3{
+  width: 10%;
+}
+.th4,.td4{
+  width: 20%;
+}
+.th5,.td5{
+  width: 20%;
+}
+.th6,.td6{
+  width: 10%;
+}
+.td6 image{
+  height: 5vw;
+  width: 5vw;
+  margin-top: 3.5vw;
+}

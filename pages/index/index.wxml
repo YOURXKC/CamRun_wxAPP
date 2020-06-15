@@ -1,0 +1,55 @@
+<!--pages/index/index.wxml-->
+<!--背景-->
+<image mode="aspectFill" class="backgrounds" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/index_img/background2.png"></image>
+
+<!--自定义标题栏-->
+<view class="nva-bar" style="height:{{z_height}}px;">
+  <view class="s-bar" style="height:{{s_height}}px;"></view>
+  <view class="t-bar" style="height:{{z_height - s_height}}px;">
+    <view class="logo" style="width:{{m_height * 5}}px; height:{{m_height}}px;margin-top:{{m_ptd}}px;margin-left:{{m_ptd}}px;">
+      <image src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/index_img/logo.png"></image>
+    </view>
+  </view>
+</view>
+
+<!--滚动通知-->
+<view class="natice" style="margin-top:{{z_height}}px;" wx:if="{{if_block}}">
+  公告: 请修改密码与阳光长跑登录密码保持一致
+</view>
+
+<!--正文内容-->
+<view class="views">
+
+  <view class="display-view">
+
+    <!--第一个圈-->
+    <view class="quan-view1">
+      <view class="quan-color1">
+        <view class="quan-value1">{{z_num}}</view>
+      </view>
+    </view>
+    <view class="quan-text1">总次数</view>
+
+    <view>
+      <!--第二个圈-->
+      <view class="quan-view2">
+        <view class="quan-color2">
+          <view class="quan-value2">{{y_num}}</view>
+        </view>
+      </view>
+      <!--第三个圈-->
+      <view class="quan-view3">
+        <view class="quan-color3">
+          <view class="quan-value3">{{w_num}}</view>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view class="quan-text2">有效次数</view>
+      <view class="quan-text3">无效次数</view>
+    </view>
+
+    <!--打开详细信息-->
+    <view class="details-view" bindtap="openDetails">查看详细信息</view>
+  </view>
+</view>

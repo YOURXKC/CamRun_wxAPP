@@ -1,0 +1,8 @@
+/* pages/update/update.wxss */
+view{
+  width: 100%;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  color: gray;
+}

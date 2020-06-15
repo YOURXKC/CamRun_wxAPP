@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/update/update",
+    "pages/wode/wode",
+    "pages/login/login",
+    "pages/details/details",
+    "pages/uppassword/uppassword",
+    "pages/studentSms/studentSms"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6A5ACD",
+    "backgroundColor": "#6A5ACD",
+    "navigationBarTitleText": "阳光长跑",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#6A5ACD",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/icon/run1.png",
+        "iconPath": "images/icon/run0.png",
+        "pagePath": "pages/index/index",
+        "text": "成绩"
+      },
+      {
+        "selectedIconPath": "images/icon/update1.png",
+        "iconPath": "images/icon/update0.png",
+        "pagePath": "pages/update/update",
+        "text": "错误"
+      },
+      {
+        "selectedIconPath": "images/icon/wode1.png",
+        "iconPath": "images/icon/wode0.png",
+        "pagePath": "pages/wode/wode",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

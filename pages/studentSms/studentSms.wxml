@@ -1,0 +1,42 @@
+<!--pages/studentSms/studentSms.wxml-->
+<view class="views">
+  <!--姓名-->
+  <view class="block-view">
+    <view class="keys">姓名</view>
+    <view class="values">{{user_name}}</view>
+  </view>
+  <!--学号-->
+  <view class="block-view">
+    <view class="keys">学号</view>
+    <view class="values">{{user_no}}</view>
+  </view>
+  <!--学院-->
+  <view class="block-view">
+    <view class="keys">学院</view>
+    <view class="values">{{user_college}}</view>
+  </view>
+  <!--专业-->
+  <view class="block-view">
+    <view class="keys">专业</view>
+    <view class="values">{{user_major}}</view>
+  </view>
+  <!--年级-->
+  <view class="block-view">
+    <view class="keys">年级</view>
+    <view class="values">{{user_grade}}级</view>
+  </view>
+  <!--班级-->
+  <view class="block-view">
+    <view class="keys">班级</view>
+    <view class="values">{{user_class}}</view>
+  </view>
+  <!--学制-->
+  <view class="block-view">
+    <view class="keys">学制</view>
+    <view class="values">{{user_syear}}</view>
+  </view>
+  <!--返回-->
+  <view class="fanhui" bindtap="fanhuiVoid">
+    <image src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/studentSms_img/fanhui.png"></image>
+  </view>
+</view>

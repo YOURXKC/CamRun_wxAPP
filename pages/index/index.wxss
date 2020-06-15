@@ -1,0 +1,184 @@
+/* pages/index/index.wxss */
+.nva-bar{
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+}
+.s-bar{
+  width: 100%;
+}
+.t-bar{
+  width: 100%;
+  overflow: hidden;
+}
+.logo{
+  float: left;
+}
+.logo image{
+  width: 100%;
+  height: 100%;
+}
+.natice{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #FFE4C4;
+  color: #FF8C00;
+  position: fixed;
+  z-index: 1000;
+  white-space:nowrap;
+  padding: 0 10rpx;
+  overflow: hidden;
+  font-size: 32rpx;
+}
+.views{
+  width: 100%;
+  padding-top: 10vh;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.backgrounds{
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+.display-view{
+  width: 90vw;
+  height: 65vh;
+  margin: 0 auto;
+  position: relative;
+}
+.quan-view1{
+  width: 38vw;
+  height: 38vw;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 19vw;
+  overflow: hidden;
+  box-shadow: 0 0 20rpx 10rpx skyblue;
+}
+.quan-view2{
+  float: left;
+  width: 34vw;
+  height: 34vw;
+  border-radius: 17vw;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 0 20rpx 5rpx green;
+}
+.quan-view3{
+  float: right;
+  width: 34vw;
+  height: 34vw;
+  border-radius: 17vw;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 0 20rpx 5rpx red;
+}
+.quan-text1{
+  width: 100%;
+  text-align: center;
+  font-size: 40rpx;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 10rpx;
+  text-indent: 10rpx;
+  margin-top: 20rpx;
+}
+.quan-text2{
+  float: left;
+  width: 34vw;
+  text-align: center;
+  font-size: 33rpx;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 10rpx;
+  text-indent: 10rpx;
+  margin-top: 20rpx;
+}
+.quan-text3{
+  float: right;
+  width: 34vw;
+  text-align: center;
+  font-size: 33rpx;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 10rpx;
+  text-indent: 10rpx;
+  margin-top: 20rpx;
+}
+.quan-color1{
+  width: 34vw;
+  height: 34vw;
+  background-color: hsl(197, 71%, 73%);
+  margin: 2vw;
+  border-radius: 17vw;
+  overflow: hidden;
+}
+.quan-color2{
+  width: 30vw;
+  height: 30vw;
+  background-color: green;
+  margin: 2vw;
+  border-radius: 15vw;
+  overflow: hidden;
+}
+.quan-color3{
+  width: 30vw;
+  height: 30vw;
+  background-color: red;
+  margin: 2vw;
+  border-radius: 15vw;
+  overflow: hidden;
+}
+.quan-value1{
+  width: 31vw;
+  height: 31vw;
+  line-height: 31vw;
+  color: skyblue;
+  font-size: 80rpx;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5vw;
+  background-color: white;
+  border-radius: 15.5vw;
+}
+.quan-value2{
+  width: 27vw;
+  height: 27vw;
+  line-height: 27vw;
+  color: green;
+  font-size: 70rpx;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5vw;
+  background-color: white;
+  border-radius: 13.5vw;
+}
+.quan-value3{
+  width: 27vw;
+  height: 27vw;
+  line-height: 27vw;
+  color: red;
+  font-size: 70rpx;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5vw;
+  background-color: white;
+  border-radius: 13.5vw;
+}
+.details-view{
+  width: 100%;
+  height: 10vw;
+  background-color: white;
+  text-align: center;
+  line-height: 10vw;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5vw;
+  letter-spacing: 10rpx;
+  text-indent: 10rpx;
+}
