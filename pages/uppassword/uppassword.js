@@ -142,6 +142,16 @@ Page({
       });
       return;
     }
+    //判断密码是否小于6为字符
+    if(this.data.newPassword1.length < 6 || this.data.newPassword1.length < 6)
+    {
+      wx.showToast({
+        title: '密码长度不能低于6位字符',
+        icon: 'none',
+        duration: 2000
+      });
+      return;
+    }
     //调用密码修改
     this.updatePassword();
   },
