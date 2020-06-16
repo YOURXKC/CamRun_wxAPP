@@ -8,7 +8,7 @@ Page({
   data: {
     testList: [],
     data_display1: false,
-    data_display2: false
+    data_display2: true
   },
 
   /**
@@ -84,13 +84,25 @@ Page({
         header: {'content-type': 'application/x-www-form-urlencoded'}, //默认值
         success: function (res) {
           //console.log(res.data);
+          //判断是否查询成功
           if(res.data.status)
           {
-            app.setData({
-              data_display1: true,
-              data_display2: false
-            });
-            app.setData({testList: res.data.data.data});
+            //判断数据是否为空
+            if(res.data.data.z_num == 0)
+            {
+              app.setData({
+                data_display1: false,
+                data_display2: true
+              });
+            }
+            else
+            {
+              app.setData({
+                data_display1: true,
+                data_display2: false
+              });
+              app.setData({testList: res.data.data.data});
+            }
           }
           else
           {
@@ -99,9 +111,9 @@ Page({
               data_display2: true
             });
             wx.showToast({
-              title: "数据加载出错",
+              title: res.data,data,
               icon: 'none',
-              duration: 1000
+              duration: 3000
             });
           }
         }

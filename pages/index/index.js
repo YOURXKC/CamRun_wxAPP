@@ -158,11 +158,11 @@ Page({
       //发起网络请求
       wx.request({
         method: "POST",
-        url: util.adminUrl + "querytest",
+        url: util.adminUrl + "getruntest",
         data: {redis: util.redis},
         header: {'content-type': 'application/x-www-form-urlencoded'}, //默认值
         success: function (res) {
-          //console.log(res.data);
+          console.log(res.data);
           if(res.data.status)
           {
             app.setData({
@@ -170,6 +170,7 @@ Page({
               y_num: res.data.data.y_num,
               w_num: res.data.data.w_num
             });
+            //密码修改提示开关
             if(app.data.z_num == 0)
             {
               app.setData({if_block: true});
@@ -182,9 +183,9 @@ Page({
           else
           {
             wx.showToast({
-              title: "数据加载出错",
+              title: res.data.data,
               icon: 'none',
-              duration: 1000
+              duration: 3000
             });
           }
         }
