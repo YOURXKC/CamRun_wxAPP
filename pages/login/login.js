@@ -108,6 +108,7 @@ Page({
       method: "POST",
       url: util.adminUrl + "bindopenid",
       data: {
+        type: util.type,
         openid: util.openid,
         stu_id: this.data.stu_id,
         password: this.data.password
@@ -123,7 +124,7 @@ Page({
             icon: 'none',
             duration: 1000
           });
-          util.xbool = true;
+          util.redis = res.data.redis;
           wx.navigateBack();          
         }
         else

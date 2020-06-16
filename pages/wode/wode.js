@@ -14,7 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if(util.xbool)
+    if(util.redis != "")
     {
       this.queryStudent();
     }
@@ -87,7 +87,7 @@ Page({
       method: "POST",
       url: util.adminUrl + "getstudent",
       data: {
-        openid: util.openid
+        redis: util.redis
       },
       header: {'content-type': 'application/x-www-form-urlencoded'}, //默认值
       success: function (res) {
@@ -114,7 +114,7 @@ Page({
    * 打开功能
    */
   clickUpdate: function (e) {
-    if(util.xbool)
+    if(util.redis != "")
     {
       var id = Number(e.currentTarget.dataset.id);
       switch(id)

@@ -2,7 +2,10 @@
 const adminUrl = "https://www.camrun.today/wx";
 //用户openid
 const openid = "";
-const xbool = false;
+//用户后台redis键名
+const redis = "";
+//用户请求类型
+const type = 1;
 
 const formatTime = date => {
   const year = date.getFullYear()
@@ -24,5 +27,6 @@ module.exports = {
   formatTime: formatTime,
   adminUrl: adminUrl,
   openid: openid,
-  xbool: xbool
+  redis: redis,
+  type: type
 }

@@ -168,7 +168,7 @@ Page({
       method: "POST",
       url: util.adminUrl + "updatepassword",
       data: {
-        openid: util.openid,
+        redis: util.redis,
         oldPassword: this.data.oldPassword,
         newPassword: this.data.newPassword1
       },

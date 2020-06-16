@@ -71,7 +71,7 @@ Page({
    * 查询长跑成绩
    */
   queryTest: function () {
-    if(util.openid != "")
+    if(util.redis != "")
     {
       var app = this;
       //发起网络请求
@@ -79,7 +79,7 @@ Page({
         method: "POST",
         url: util.adminUrl + "querytest",
         data: {
-          openid: util.openid
+          redis: util.redis
         },
         header: {'content-type': 'application/x-www-form-urlencoded'}, //默认值
         success: function (res) {
