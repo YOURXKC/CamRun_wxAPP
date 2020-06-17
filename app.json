@@ -1,12 +1,16 @@
 {
   "pages": [
+    
     "pages/index/index",
-    "pages/update/update",
+    "pages/upError/upError",
     "pages/wode/wode",
     "pages/login/login",
     "pages/details/details",
     "pages/uppassword/uppassword",
-    "pages/studentSms/studentSms"
+    "pages/studentSms/studentSms",
+    "pages/updateClass/updateClass",
+    "pages/updateGrade/updateGrade",
+    "pages/updateMajor/updateMajor"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,7 +33,7 @@
       {
         "selectedIconPath": "images/icon/update1.png",
         "iconPath": "images/icon/update0.png",
-        "pagePath": "pages/update/update",
+        "pagePath": "pages/upError/upError",
         "text": "错误"
       },
       {

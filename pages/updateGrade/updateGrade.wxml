@@ -1,0 +1,22 @@
+<!--pages/updateGrade/updateGrade.wxml-->
+<view class="views">
+  <view class="data-null" wx:if="{{display_null}}" bindtap="showSelect">申请修改</view>
+
+  <view class="data-yes" wx:if="{{display_select}}">
+    <picker mode="selector" range="{{selectArray}}" bindchange="setNewClass" value="0">
+      <view class="name">{{new_grade}}级</view>
+    </picker>
+    <view class="xian"></view>
+    <view class="submit" bindtap="submit">提交</view>
+  </view>
+
+  <view class="data-yes"  wx:if="{{display_yes}}">
+    <view class="name">{{old_grade}}级</view>
+    <view class="xian"></view>
+    <view class="name">{{new_grade}}级</view>
+    <view class="xian"></view>
+    <view class="status">{{status}}</view>
+    <view class="xian"></view>
+    <view class="name red" bindtap="revoke">撤销</view>
+  </view>
+</view>

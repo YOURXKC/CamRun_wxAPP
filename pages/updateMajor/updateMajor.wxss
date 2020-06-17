@@ -1,0 +1,76 @@
+/* pages/updateMajor/updateMajor.wxss */
+.views{
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #6A5ACD;
+}
+.data-null{
+  width: 300rpx;
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40rpx;
+  color: #6A5ACD;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 150rpx;
+  box-shadow: 0 0 60rpx 5rpx white;
+}
+.data-yes{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.name{
+  display: inline-block;
+  padding: 20rpx 50rpx;
+  background-color: white;
+  font-size: 40rpx;
+  color: black;
+  border-radius: 15rpx;
+}
+.xian{
+  width: 10rpx;
+  height: 100rpx;
+  background-color: white;
+  margin: 0 auto;
+}
+.status{
+  width: 260rpx;
+  height: 260rpx;
+  line-height: 260rpx;
+  margin: 0 auto;
+  background-color: white;
+  color: #6A5ACD;
+  font-weight: bold;
+  font-size: 40rpx;
+  letter-spacing: 10rpx;
+  text-indent: 10rpx;
+  border-radius: 130rpx;
+}
+.red{
+  color: red;
+  font-weight: bold;
+}
+.class-title{
+  color: white;
+  font-size: 35rpx;
+  font-weight: bold;
+  letter-spacing: 15rpx;
+  text-indent: 15rpx;
+}
+.submit{
+  width: 200rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 40rpx;
+  border-radius: 100rpx;
+  background-color: white;
+  color: blue;
+}

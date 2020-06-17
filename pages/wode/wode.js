@@ -7,7 +7,10 @@ Page({
    */
   data: {
     user_name: "欢迎你",
-    user_no: "0000000000"
+    user_no: "0000000000",
+    user_class: "",
+    user_grade: "",
+    user_major: ""
   },
 
   /**
@@ -95,7 +98,10 @@ Page({
         {
           app.setData({
             user_name: res.data.message.name,
-            user_no: res.data.message.stu_id
+            user_no: res.data.message.stu_id,
+            user_class: res.data.message.stu_class,
+            user_grade: res.data.message.stu_year,
+            user_major: res.data.message.major
           });
         }
         else
@@ -120,21 +126,9 @@ Page({
       switch(id)
       {
         case 1: wx.navigateTo({url: '../uppassword/uppassword'});break;
-        case 2: wx.showToast({
-          title: '暂未开放',
-          icon: 'none',
-          duration: 2000
-        });break;
-        case 3: wx.showToast({
-          title: '暂未开放',
-          icon: 'none',
-          duration: 2000
-        });break;
-        case 4: wx.showToast({
-          title: '暂未开放',
-          icon: 'none',
-          duration: 2000
-        });break;
+        case 2: wx.navigateTo({url: '../updateMajor/updateMajor?major='+this.data.user_major});break;
+        case 3: wx.navigateTo({url: '../updateGrade/updateGrade?grade='+this.data.user_grade});break;
+        case 4: wx.navigateTo({url: '../updateClass/updateClass?class='+this.data.user_class});break;
         case 5: wx.showToast({
           title: '暂未开放',
           icon: 'none',

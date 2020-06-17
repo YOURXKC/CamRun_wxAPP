@@ -8,7 +8,8 @@ Page({
   data: {
     testList: [],
     data_display1: false,
-    data_display2: true
+    data_display2: true,
+    tishi_text: "加载中···"
   },
 
   /**
@@ -92,23 +93,25 @@ Page({
             {
               app.setData({
                 data_display1: false,
-                data_display2: true
+                data_display2: true,
+                tishi_text: "暂无您的跑步数据"
               });
             }
             else
             {
+              app.setData({testList: res.data.data.data});
               app.setData({
                 data_display1: true,
                 data_display2: false
               });
-              app.setData({testList: res.data.data.data});
             }
           }
           else
           {
             app.setData({
               data_display1: false,
-              data_display2: true
+              data_display2: true,
+              tishi_text: "暂无您的跑步数据"
             });
             wx.showToast({
               title: res.data,data,
@@ -123,7 +126,8 @@ Page({
     {
       this.setData({
         data_display1: false,
-        data_display2: true
+        data_display2: true,
+        tishi_text: "暂无您的跑步数据"
       });
     }
   }

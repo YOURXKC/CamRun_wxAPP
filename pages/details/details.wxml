@@ -28,4 +28,4 @@
 </view>
 
 <!--无数据-->
-<view class="data-no" wx:if="{{data_display2}}">暂无您的跑步数据</view>
+<view class="data-no" wx:if="{{data_display2}}">{{tishi_text}}</view>
