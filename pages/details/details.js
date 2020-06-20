@@ -78,13 +78,13 @@ Page({
       //发起网络请求
       wx.request({
         method: "POST",
-        url: util.adminUrl + "querytest",
+        url: util.adminUrl + "getruntest",
         data: {
           redis: util.redis
         },
         header: {'content-type': 'application/x-www-form-urlencoded'}, //默认值
         success: function (res) {
-          //console.log(res.data);
+          console.log(res.data);
           //判断是否查询成功
           if(res.data.status)
           {

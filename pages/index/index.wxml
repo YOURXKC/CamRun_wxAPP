@@ -1,7 +1,4 @@
 <!--pages/index/index.wxml-->
-<!--背景-->
-<image mode="aspectFill" class="backgrounds" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/index_img/background2.png"></image>
-
 <!--自定义标题栏-->
 <view class="nva-bar" style="height:{{z_height}}px;">
   <view class="s-bar" style="height:{{s_height}}px;"></view>
@@ -11,45 +8,92 @@
     </view>
   </view>
 </view>
-
 <!--滚动通知-->
 <view class="natice" style="margin-top:{{z_height}}px;" wx:if="{{if_block}}">
   公告: 请修改密码与阳光长跑登录密码保持一致
 </view>
+<!--分数显示开关-->
+<view class="open-close" bindtap="testSwitch">{{switch_text}}</view>
 
 <!--正文内容-->
 <view class="views">
+  <!--上下滚动视图-->
+  <swiper indicator-color="rgba(255, 255, 255, .4)" indicator-active-color="#fff" vertical="{{true}}">
 
-  <view class="display-view">
 
-    <!--第一个圈-->
-    <view class="quan-view1">
-      <view class="quan-color1">
-        <view class="quan-value1">{{z_num}}</view>
-      </view>
-    </view>
-    <view class="quan-text1">总次数</view>
-
-    <view>
-      <!--第二个圈-->
-      <view class="quan-view2">
-        <view class="quan-color2">
-          <view class="quan-value2">{{y_num}}</view>
+    <!--总次数-->
+    <swiper-item>
+      <!--背景-->
+      <image mode="aspectFill" class="backgrounds" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/index_img/background_index1.png"></image>
+      <!--隔离通知栏-->
+      <view style="height:{{z_height}}px;"></view>
+      <!--显示内容-->
+      <view class="body" style="height:{{w_height}}px" wx:if="{{display_test}}">
+        <!--垂直居中内容-->
+        <view class="bodys">
+          <!--圆圈-->
+          <view class="quan-view quan1">
+            <view class="quan-view-value">{{z_num}}</view>
+            <view class="quan-text text1">总次数</view>
+          </view>
+        </view>
+        <!--下滑提示-->
+        <view class="tishi-view">
+          <view class="arrow bounce"></view>
+          <view class="arrow bounce"></view>
         </view>
       </view>
-      <!--第三个圈-->
-      <view class="quan-view3">
-        <view class="quan-color3">
-          <view class="quan-value3">{{w_num}}</view>
+    </swiper-item>
+
+
+    <!--有效次数-->
+    <swiper-item>
+      <!--背景-->
+      <image mode="aspectFill" class="backgrounds" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/index_img/background_index2.png"></image>
+      <!--隔离通知栏-->
+      <view style="height:{{z_height}}px;"></view>
+      <!--显示内容-->
+      <view class="body" style="height:{{w_height}}px" wx:if="{{display_test}}">
+        <!--垂直居中内容-->
+        <view class="bodys">
+          <!--圆圈-->
+          <view class="quan-view quan2">
+            <view class="quan-view-value">{{y_num}}</view>
+            <view class="quan-text text2">有效次数</view>
+          </view>
+        </view>
+        <!--下滑提示-->
+        <view class="tishi-view">
+          <view class="arrow bounce"></view>
+          <view class="arrow bounce"></view>
         </view>
       </view>
-    </view>
-    <view>
-      <view class="quan-text2">有效次数</view>
-      <view class="quan-text3">无效次数</view>
-    </view>
+    </swiper-item>
 
-    <!--打开详细信息-->
-    <view class="details-view" bindtap="openDetails">查看详细信息</view>
-  </view>
+
+    <!--无效次数-->
+    <swiper-item>
+      <!--背景-->
+      <image mode="aspectFill" class="backgrounds" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/index_img/background_index3.png"></image>
+      <!--隔离通知栏-->
+      <view style="height:{{z_height}}px;"></view>
+      <!--显示内容-->
+      <view class="body" style="height:{{w_height}}px" wx:if="{{display_test}}">
+        <!--垂直居中内容-->
+        <view class="bodys">
+          <!--圆圈-->
+          <view class="quan-view quan3">
+            <view class="quan-view-value">{{w_num}}</view>
+            <view class="quan-text text3">无效次数</view>
+          </view>
+        </view>
+        <!--下滑提示-->
+        <view class="tishi-view">
+          <view class="tishi-value" bindtap="openDetails">查看长跑成绩详情</view>
+        </view>
+      </view>
+    </swiper-item>
+
+
+  </swiper>
 </view>

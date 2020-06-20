@@ -24,161 +24,152 @@
   line-height: 60rpx;
   background-color: #FFE4C4;
   color: #FF8C00;
-  position: fixed;
-  z-index: 1000;
-  white-space:nowrap;
+  white-space:nowrap;/*强制不换行*/
   padding: 0 10rpx;
   overflow: hidden;
   font-size: 32rpx;
+  position: fixed;
+  z-index: 99999;
 }
 .views{
   width: 100%;
-  padding-top: 10vh;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+}
+swiper swiper-item{
+  position: relative;
 }
 .backgrounds{
   display: block;
   width: 100%;
-  height: 100vh;
-  position: fixed;
+  height: 100%;
+  position: absolute;
   z-index: -1;
 }
-.display-view{
-  width: 90vw;
-  height: 65vh;
+.body{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.bodys{
+  width: 100%;
+  height: auto;
+}
+.quan-view{
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 200rpx;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
+  margin-bottom: 200rpx;
 }
-.quan-view1{
-  width: 38vw;
-  height: 38vw;
-  background-color: white;
+.quan-view-value{
+  width: 320rpx;
+  height: 320rpx;
   margin: 0 auto;
-  border-radius: 19vw;
-  overflow: hidden;
-  box-shadow: 0 0 20rpx 10rpx skyblue;
-}
-.quan-view2{
-  float: left;
-  width: 34vw;
-  height: 34vw;
-  border-radius: 17vw;
-  background-color: white;
-  overflow: hidden;
-  box-shadow: 0 0 20rpx 5rpx green;
-}
-.quan-view3{
-  float: right;
-  width: 34vw;
-  height: 34vw;
-  border-radius: 17vw;
-  background-color: white;
-  overflow: hidden;
-  box-shadow: 0 0 20rpx 5rpx red;
-}
-.quan-text1{
-  width: 100%;
+  position: relative;
+  line-height: 320rpx;
   text-align: center;
-  font-size: 40rpx;
+  border-radius: 160rpx;
+  font-size: 120rpx;
+  font-weight: bold;
   color: white;
-  font-weight: bold;
-  letter-spacing: 10rpx;
-  text-indent: 10rpx;
-  margin-top: 20rpx;
 }
-.quan-text2{
-  float: left;
-  width: 34vw;
-  text-align: center;
-  font-size: 33rpx;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 10rpx;
-  text-indent: 10rpx;
-  margin-top: 20rpx;
-}
-.quan-text3{
-  float: right;
-  width: 34vw;
-  text-align: center;
-  font-size: 33rpx;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 10rpx;
-  text-indent: 10rpx;
-  margin-top: 20rpx;
-}
-.quan-color1{
-  width: 34vw;
-  height: 34vw;
-  background-color: hsl(197, 71%, 73%);
-  margin: 2vw;
-  border-radius: 17vw;
-  overflow: hidden;
-}
-.quan-color2{
-  width: 30vw;
-  height: 30vw;
-  background-color: green;
-  margin: 2vw;
-  border-radius: 15vw;
-  overflow: hidden;
-}
-.quan-color3{
-  width: 30vw;
-  height: 30vw;
-  background-color: red;
-  margin: 2vw;
-  border-radius: 15vw;
-  overflow: hidden;
-}
-.quan-value1{
-  width: 31vw;
-  height: 31vw;
-  line-height: 31vw;
-  color: skyblue;
-  font-size: 80rpx;
-  font-weight: bold;
-  text-align: center;
-  margin: 1.5vw;
-  background-color: white;
-  border-radius: 15.5vw;
-}
-.quan-value2{
-  width: 27vw;
-  height: 27vw;
-  line-height: 27vw;
-  color: green;
-  font-size: 70rpx;
-  font-weight: bold;
-  text-align: center;
-  margin: 1.5vw;
-  background-color: white;
-  border-radius: 13.5vw;
-}
-.quan-value3{
-  width: 27vw;
-  height: 27vw;
-  line-height: 27vw;
-  color: red;
-  font-size: 70rpx;
-  font-weight: bold;
-  text-align: center;
-  margin: 1.5vw;
-  background-color: white;
-  border-radius: 13.5vw;
-}
-.details-view{
-  width: 100%;
-  height: 10vw;
-  background-color: white;
-  text-align: center;
-  line-height: 10vw;
+.quan-text{
   position: absolute;
+  z-index: 100;
   bottom: 0;
-  border-radius: 5vw;
+  width: 100%;
+  height: 110rpx;
+  line-height: 95rpx;
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: bold;
   letter-spacing: 10rpx;
   text-indent: 10rpx;
+  background-color: white;
+}
+.tishi-view{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 20rpx;
+}
+.tishi-value{
+  width: 80%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 35rpx;
+  text-align: center;
+  color: white;
+  color: #6A5ACD;
+  letter-spacing: 5rpx;
+  text-indent: 5rpx;
+  margin-bottom: 50rpx;
+}
+.open-close{
+  position: absolute;
+  z-index: 1100;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 33rpx;
+  right: 30rpx;
+  bottom: 30rpx;
+  border-radius: 50rpx;
+  background-color: rgba(80, 80, 80, 0.5);
+  color: white;
+}
+.quan1{
+  background-color: rgba(135, 206, 235, 0.8);
+}
+.text1{
+  color: skyblue;
+}
+.quan2{
+  background-color: rgba(73, 170, 73, 0.8);
+}
+.text2{
+  color: green;
+}
+.quan3{
+  background-color: rgba(241, 88, 88, 0.8);
+}
+.text3{
+  color: red;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.arrow {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 auto;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
 }

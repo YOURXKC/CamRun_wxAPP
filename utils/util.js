@@ -6,6 +6,10 @@ const openid = "";
 const redis = "";
 //用户请求类型
 const type = 1;
+//教务系统cookie
+const cookie = "";
+//教务系统菜单地址
+const menu = [];
 
 const formatTime = date => {
   const year = date.getFullYear()
@@ -28,5 +32,7 @@ module.exports = {
   adminUrl: adminUrl,
   openid: openid,
   redis: redis,
-  type: type
+  type: type,
+  cookie: cookie,
+  menu: menu
 }

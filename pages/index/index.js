@@ -8,13 +8,16 @@ Page({
   data: {
     if_block: true,//滚动条显示控制
     if_querytest: true,//成绩查询接口时间控制
+    display_test: true,//分数显示控制
+    switch_text: "赏景",
     z_num: 0,
     y_num: 0,
     w_num: 0,
     z_height: 0,//标题栏加状态栏高度
     s_height: 0,//状态栏高度
     m_height: 0,//标题栏高度
-    m_ptd: 0//标题栏上下内边距
+    m_ptd: 0,//标题栏上下内边距
+    w_height: 0//内容显示高度
   },
 
   /**
@@ -201,6 +204,28 @@ Page({
   },
 
   /**
+   * 打开与关闭分数显示
+   */
+  testSwitch: function () {
+    if(this.data.display_test)
+    {//分数为显示状态
+      //关闭分数显示，把开关字符从“赏景”更换为“查分”
+      this.setData({
+        display_test: false,
+        switch_text: "查分"
+      });
+    }
+    else
+    {//分数为关闭状态
+      //开启分数显示，把开关字符从“查分”更换为“赏景”
+      this.setData({
+        display_test: true,
+        switch_text: "赏景"
+      });
+    }
+  },
+
+  /**
    * 自定义标题栏
    */
   shows: function () {
@@ -214,7 +239,8 @@ Page({
       z_height: zheight,
       s_height: statusBar.statusBarHeight,
       m_height: menuBar.height,
-      m_ptd: menuBar.top - statusBar.statusBarHeight
+      m_ptd: menuBar.top - statusBar.statusBarHeight,
+      w_height: statusBar.windowHeight - zheight
     });
   }
 })

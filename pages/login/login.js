@@ -129,11 +129,27 @@ Page({
         }
         else
         {
-          wx.showToast({
-            title: res.data.message,
-            icon: 'none',
-            duration: 2000
-          });
+          if(res.data.code)
+          {
+            wx.showModal({
+              title: '提示',
+              content: '系统库无此账户，确定添加？',
+              success (res) {
+                if(res.confirm) 
+                {
+                  wx.redirectTo({url: "../schoolLogin/schoolLogin"});
+                }
+              }
+            });
+          }
+          else
+          {
+            wx.showToast({
+              title: res.data.message,
+              icon: 'none',
+              duration: 2000
+            });
+          }
         }
       }
     });

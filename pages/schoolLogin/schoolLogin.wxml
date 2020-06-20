@@ -1,0 +1,35 @@
+<!--pages/schoolLogin/schoolLogin.wxml-->
+<view class="views">
+  <view class="display-block">
+    <image class="logo" mode="aspectFit" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/schoolLogin_img/schoolEAS_logo1.png"></image>
+    <!--输入区域-->
+    <view class="input-view">
+
+      <!--用户名-->
+      <view class="input-user-password">
+        <image class="input-icon" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/login_img/user.png"></image>
+        <input class="input-value"  maxlength="10" bindinput="getUserName" placeholder="教务系统学号" type="number" placeholder-class="input-color"/>
+        <view style="clear: both;"></view>
+      </view>
+      
+      <!--密码-->
+      <view class="input-user-password">
+        <image class="input-icon" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/login_img/password.png"></image>
+        <input class="input-value"  maxlength="18" bindinput="getPassword" placeholder="教务系统密码" password type="text"  placeholder-class="input-color"/>
+        <view style="clear: both;"></view>
+      </view>
+      
+      <!--验证码-->
+      <view class="input-user-passwords">
+        <image class="input-icon" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/schoolLogin_img/code.png"></image>
+        <input class="input-values"  maxlength="4" bindinput="getUserCode" placeholder="验证码" type="text"  placeholder-class="input-color"/>
+        <view style="clear: both;"></view>
+      </view>
+      <!--验证码图片-->
+      <view class="code-img" bindtap="switchCode"><image mode="aspectFit" src="{{imgPath}}"></image></view>
+      <view style="clear: both;"></view>
+      <!--按钮-->
+      <view class="button" bindtap="clickButton">{{buttonText}}</view>
+    </view>
+  </view>
+</view>

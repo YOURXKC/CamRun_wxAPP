@@ -1,6 +1,5 @@
 {
   "pages": [
-    
     "pages/index/index",
     "pages/upError/upError",
     "pages/wode/wode",
@@ -10,7 +9,8 @@
     "pages/studentSms/studentSms",
     "pages/updateClass/updateClass",
     "pages/updateGrade/updateGrade",
-    "pages/updateMajor/updateMajor"
+    "pages/updateMajor/updateMajor",
+    "pages/schoolLogin/schoolLogin"
   ],
   "window": {
     "backgroundTextStyle": "light",

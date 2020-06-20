@@ -7,7 +7,7 @@
 <view class="input-viewss">
   <view class="input-views">
     <!--LOGO-->
-    <image class="logo" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/login_img/schooltext2.png"></image>
+    <image class="logo" src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/login_img/schooltext5.png"></image>
     <!--输入区域-->
     <view class="input-view">
       <!--用户名-->

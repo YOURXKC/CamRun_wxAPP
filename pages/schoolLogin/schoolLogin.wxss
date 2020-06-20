@@ -1,36 +1,26 @@
-/* pages/login/login.wxss */
-.backgrounds{
+/* pages/schoolLogin/schoolLogin.wxss */
+.views{
   width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: -1;
-  overflow: hidden;
-}
-.back-image{
-  width: 100%;
-  height: 100%;
-}
-.input-viewss{
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #6A5ACD;
   display: flex;
   align-items: center;
-  text-align: center;
 }
-.input-views{
-  width: 90vw;
+.display-block{
+  width: 100%;
   height: auto;
-  margin: 0 auto;
+  position: relative;
 }
 .logo{
-  display: block;
   width: 84vw;
   height: 28vw;
-  margin: 0 auto 20vw;
+  display: block;
+  margin: 0 auto 100rpx;
 }
 .input-view{
-  width: 100%;
+  width: 90vw;
+  margin: 0 auto;
   height: auto;
 }
 .input-user-password{
@@ -39,7 +29,16 @@
   border-radius: 6vw;
   margin: 5vw 0;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
+}
+.input-user-passwords{
+  width: 50vw;
+  height: 12vw;
+  border-radius: 6vw;
+  margin: 0 0 5vw 0;
+  overflow: hidden;
+  float: left;
+  background-color: white;
 }
 .input-icon{
   width: 8vw;
@@ -53,8 +52,27 @@
   float: left;
   text-align: left;
 }
+.input-values{
+  width: 35vw;
+  height: 12vw;
+  float: left;
+  text-align: left;
+}
 .input-color{
   color: rgb(70, 70, 70);
+}
+.code-img{
+  height: 12vw;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  float: right;
+}
+.code-img image{
+  display: block;
+  margin:  0 auto;
+  height: 100%;
 }
 .button{
   width: 100%;
@@ -69,5 +87,5 @@
   letter-spacing: 15rpx;
   text-indent: 15rpx;
   margin-top: 10vw;
-  margin-bottom: 20vw;
+  margin-bottom: 100rpx;
 }
