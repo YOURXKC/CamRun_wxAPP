@@ -4,5 +4,6 @@ view{
   height: 100vh;
   line-height: 100vh;
   text-align: center;
-  color: gray;
+  color: white;
+  background-color: #6A5ACD;
 }

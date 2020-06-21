@@ -42,7 +42,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    if(util.redis != "")
+    {
+      if(this.data.user_no == "0000000000")
+      {
+        this.queryStudent();
+      }
+    }
   },
 
   /**

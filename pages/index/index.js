@@ -46,17 +46,7 @@ Page({
     {
       if(util.openid != "")
       {
-        wx.showModal({
-          title: '提示',
-          content: '您还未绑定账号',
-          showCancel: false,
-          confirmText: "前往绑定",
-          confirmColor: "	#1E90FF",
-          complete: function () {
-            //打开登录页
-            wx.navigateTo({url: '../login/login'});
-          }
-        });
+        this.showBindOpenid();
       }
       else
       {
@@ -132,7 +122,7 @@ Page({
                 //保存openid,便于登录页绑定
                 util.openid = request.data.openid;
                 //打开登录页
-                wx.navigateTo({url: '../login/login'});
+                app.showBindOpenid();
               }
             }
           });
@@ -140,6 +130,22 @@ Page({
         else 
         {
           wx.hideLoading();
+          //打开登录页
+         app.showBindOpenid();
+        }
+      }
+    });
+  },
+
+  showBindOpenid: function () {
+    wx.showModal({
+      title: '提示',
+      content: '您还未绑定账号',
+      confirmText: "前往绑定",
+      confirmColor: "	#1E90FF",
+      success (res) {
+        if(res.confirm) 
+        {
           //打开登录页
           wx.navigateTo({url: '../login/login'});
         }
@@ -200,7 +206,14 @@ Page({
    * 打开详情页
    */
   openDetails: function () {
-    wx.navigateTo({url: '../details/details'});
+    if(util.redis != "")
+    {
+      wx.navigateTo({url: '../details/details'});
+    }
+    else
+    {
+      this.showBindOpenid();
+    }
   },
 
   /**
