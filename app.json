@@ -10,7 +10,8 @@
     "pages/updateClass/updateClass",
     "pages/updateGrade/updateGrade",
     "pages/updateMajor/updateMajor",
-    "pages/schoolLogin/schoolLogin"
+    "pages/schoolLogin/schoolLogin",
+    "pages/testFraction/testFraction"
   ],
   "window": {
     "backgroundTextStyle": "light",

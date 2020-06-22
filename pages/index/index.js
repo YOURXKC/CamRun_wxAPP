@@ -141,8 +141,8 @@ Page({
     wx.showModal({
       title: '提示',
       content: '您还未绑定账号',
-      confirmText: "前往绑定",
-      confirmColor: "	#1E90FF",
+      confirmText: '绑定',
+      confirmColor: '#1E90FF',
       success (res) {
         if(res.confirm) 
         {

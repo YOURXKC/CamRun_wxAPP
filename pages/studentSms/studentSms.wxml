@@ -37,6 +37,6 @@
   </view>
   <!--返回-->
   <view class="fanhui" bindtap="fanhuiVoid">
-    <image src="cloud://camrun-8d4v3.6361-camrun-8d4v3-1302430934/camrun/studentSms_img/fanhui.png"></image>
+    <image src="../../images/fanhui.png"></image>
   </view>
 </view>

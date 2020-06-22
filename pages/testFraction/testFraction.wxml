@@ -1,0 +1,17 @@
+<!--pages/testFraction/testFraction.wxml-->
+<view class="views">
+  <view class="tishi" wx:if="{{tishi_display}}">{{tishi_text}}</view>
+  <view class="single" wx:for="{{fraction}}" wx:key="key">
+    <view class="year-semester">
+      <text>{{item.year}}学年（第{{item.semester}}学期）</text>
+      <image class="button-img" src="{{display_fraction[index].img_src}}" data-id="{{index}}" bindtap="fractionShowHide"></image>
+    </view>
+    <view class="fraction_details" wx:if="{{display_fraction[index].bools}}">
+      <view class="details" wx:for="{{item.data}}" wx:for-index="indexs" wx:for-item="items" wx:key="keys">
+        <view class="name">{{items.name}}</view>
+        <view class="fraction" style="color:{{items.color}};">{{items.fraction}}</view>
+        <view style="clear:both;"></view>
+      </view>
+    </view>
+  </view>
+</view>

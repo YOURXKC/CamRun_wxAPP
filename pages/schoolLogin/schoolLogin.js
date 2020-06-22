@@ -219,6 +219,7 @@ Page({
         {
           //保存菜单到全局
           util.menu = res.data.menu;
+          //console.log(util.menu);
           //判断是登录还是绑定
           if(app.data.id == 0)
           {//绑定时，暂不保存全局cookie,添加用户成功后再保存到全局

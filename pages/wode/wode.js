@@ -140,11 +140,7 @@ Page({
           icon: 'none',
           duration: 2000
         });break;
-        case 6: wx.showToast({
-          title: '暂未开放',
-          icon: 'none',
-          duration: 2000
-        });break;
+        case 6: wx.navigateTo({url: '../testFraction/testFraction'});break;
         case 7: wx.navigateTo({url: '../studentSms/studentSms'});break;
         case 8: ;break;
         case 9: ;break;
